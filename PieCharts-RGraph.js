@@ -1,8 +1,8 @@
 ////////////////////////////////////////////////////
-//Version: 	1.0
+//Version: 	1.1
 //Author:  	Richard Byard
 //Usage:	Pie chart with 3d and other options using the RGraph chart library.
-//Date:		17 March 2017
+//Date:		13 Sept 2017
 ////////////////////////////////////////////////////
 define( [
         // Load the properties.js file using requireJS
@@ -31,6 +31,10 @@ define( [
 			
 			//Define the data properties - how many rows and columns to load.
 			 initialProperties: initProps,
+			
+			//Allow export to print object 
+			support : { export: true 
+			},
 			
 			//Not sure if there are any other options available here.
 			 snapshot: {cantTakeSnapshot: true
